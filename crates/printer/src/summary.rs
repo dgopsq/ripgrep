@@ -1,8 +1,8 @@
+use instant::Instant;
 use std::cell::RefCell;
 use std::io::{self, Write};
 use std::path::Path;
 use std::sync::Arc;
-use std::time::Instant;
 
 use grep_matcher::Matcher;
 use grep_searcher::{Searcher, Sink, SinkError, SinkFinish, SinkMatch};

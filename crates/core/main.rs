@@ -1,8 +1,8 @@
+use instant::*;
 use std::error;
 use std::io::{self, Write};
 use std::process;
 use std::sync::Mutex;
-use std::time::Instant;
 
 use ignore::WalkState;
 

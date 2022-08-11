@@ -235,3 +235,8 @@ pub fn is_tty_stdout() -> bool {
 pub fn is_tty_stderr() -> bool {
     atty::is(atty::Stream::Stderr)
 }
+
+#[cfg(not(any(unix, windows)))]
+fn imp() -> bool {
+    false
+}

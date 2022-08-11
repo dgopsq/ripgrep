@@ -1,8 +1,8 @@
+use instant::Duration;
 use std::fs::File;
 use std::io;
 use std::path::{Path, PathBuf};
 use std::process::{Command, Stdio};
-use std::time::Duration;
 
 use grep::cli;
 use grep::matcher::Matcher;

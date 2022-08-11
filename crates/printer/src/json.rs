@@ -1,6 +1,6 @@
+use instant::*;
 use std::io::{self, Write};
 use std::path::Path;
-use std::time::Instant;
 
 use grep_matcher::{Match, Matcher};
 use grep_searcher::{

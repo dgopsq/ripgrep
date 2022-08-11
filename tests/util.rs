@@ -1,3 +1,4 @@
+use instant::Duration;
 use std::env;
 use std::error;
 use std::ffi::OsStr;
@@ -7,7 +8,6 @@ use std::path::{Path, PathBuf};
 use std::process::{self, Command};
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::thread;
-use std::time::Duration;
 
 static TEST_DIR: &'static str = "ripgrep-tests";
 static NEXT_ID: AtomicUsize = AtomicUsize::new(0);

@@ -26,6 +26,7 @@ grep-searcher = { version = "0.1.8", path = "../searcher" }
 termcolor = "1.0.4"
 serde = { version = "1.0.77", optional = true, features = ["derive"] }
 serde_json = { version = "1.0.27", optional = true }
+instant = { version = "0.1.12", features = [ "wasm-bindgen" ] }
 
 [dev-dependencies]
 grep-regex = { version = "0.1.9", path = "../regex" }

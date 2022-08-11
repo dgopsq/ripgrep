@@ -1,9 +1,9 @@
+use instant::Instant;
 use std::cell::{Cell, RefCell};
 use std::cmp;
 use std::io::{self, Write};
 use std::path::Path;
 use std::sync::Arc;
-use std::time::Instant;
 
 use bstr::ByteSlice;
 use grep_matcher::{Match, Matcher};
@@ -1702,7 +1702,7 @@ and exhibited clearly, with a label attached.\
 
     #[test]
     fn reports_stats() {
-        use std::time::Duration;
+        use instant::Duration;
 
         let matcher = RegexMatcher::new("Sherlock|opposed").unwrap();
         let mut printer =
@@ -1729,7 +1729,7 @@ and exhibited clearly, with a label attached.\
 
     #[test]
     fn reports_stats_multiple() {
-        use std::time::Duration;
+        use instant::Duration;
 
         let matcher = RegexMatcher::new("Sherlock|opposed").unwrap();
         let mut printer =
