@@ -1,5 +1,5 @@
+use instant::Duration;
 use std::ops::{Add, AddAssign};
-use std::time::Duration;
 
 use crate::util::NiceDuration;
 

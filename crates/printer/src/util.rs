@@ -1,8 +1,8 @@
+use instant::*;
 use std::borrow::Cow;
 use std::fmt;
 use std::io;
 use std::path::Path;
-use std::time;
 
 use bstr::{ByteSlice, ByteVec};
 use grep_matcher::{Captures, LineTerminator, Match, Matcher};
@@ -327,7 +327,7 @@ impl<'a> PrinterPath<'a> {
 /// with the Deserialize impl for std::time::Duration, since this type only
 /// adds new fields.
 #[derive(Clone, Copy, Debug, Default, PartialEq, Eq)]
-pub struct NiceDuration(pub time::Duration);
+pub struct NiceDuration(pub Duration);
 
 impl fmt::Display for NiceDuration {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {

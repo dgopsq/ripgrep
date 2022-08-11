@@ -1,3 +1,4 @@
+use instant::Duration;
 use std::cmp;
 use std::ffi::OsStr;
 use std::fmt;
@@ -7,7 +8,6 @@ use std::path::{Path, PathBuf};
 use std::sync::atomic::{AtomicBool, AtomicUsize, Ordering};
 use std::sync::{Arc, Mutex};
 use std::thread;
-use std::time::Duration;
 use std::vec;
 
 use same_file::Handle;

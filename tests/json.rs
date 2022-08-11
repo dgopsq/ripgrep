@@ -1,5 +1,3 @@
-use std::time;
-
 use serde_derive::Deserialize;
 use serde_json as json;
 
@@ -130,7 +128,7 @@ struct Stats {
 #[derive(Clone, Debug, Deserialize, PartialEq, Eq)]
 struct Duration {
     #[serde(flatten)]
-    duration: time::Duration,
+    duration: instant::Duration,
     human: String,
 }
 
